@@ -21,8 +21,8 @@ import { encodeQrCode, getDataV3, getDocumentNetwork } from "../../../utils";
 import { ChainInfo } from "../../../../constants/chainInfo";
 
 const redirectUrl = (network: Network) => {
-  if (network === "homestead" || network === "matic") return "https://tradetrust.io/";
-  return "https://dev.tradetrust.io/";
+  if (network === "homestead" || network === "matic") return "https://tradetrust.knowledgecatalyst.io/";
+  return "https://tradetrust.knowledgecatalyst.io/";
 };
 
 const getReservedStorageUrl = async (documentStorage: DocumentStorage, network: Network): Promise<ActionsUrlObject> => {
