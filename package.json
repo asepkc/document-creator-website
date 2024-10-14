@@ -33,7 +33,7 @@
     "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
     "lint:type": "npx --no-install tsc --noEmit --sourceMap false",
     "lint:fix": "npm run lint -- --fix",
-    "serve-static": "http-server build -s -p 3000",
+    "serve-static": "http-server build -s -p 3001",
     "dev": "npm-run-all -p dev:*",
     "dev:blockchain": "npm run blockchain",
     "dev:css": "postcss src/tailwind.css -o src/index.css --watch",
