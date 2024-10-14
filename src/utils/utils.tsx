@@ -71,9 +71,9 @@ export const createFileTransferEvent = (files: File[]) => {
 
 export const getNetworkPath = (network?: Network): string => {
   if (!network || network === "homestead" || network === "local") {
-    return "https://tradetrust.io";
+    return "https://knowledgecatalyst.io";
   }
-  return "https://dev.tradetrust.io";
+  return "https://dev.knowledgecatalyst.io";
 };
 
 export const getIssuerLocation = (rawDocument: OpenAttestationDocument): string | undefined => {

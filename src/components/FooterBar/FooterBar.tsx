@@ -30,14 +30,6 @@ const getData: GetDataInterface = (networkPath: string) => {
       ],
     },
     {
-      category: "Support",
-      items: [
-        { label: "Github", to: URLS.GITHUB, render: RenderExternalLink },
-        { label: "Documentation", to: URLS.DOCS, render: RenderExternalLink },
-        { label: "Contact", to: `${networkPath}/contact`, render: RenderExternalLink },
-      ],
-    },
-    {
       category: "Settings",
       items: [
         { label: "Address Book", to: "/settings/address-book", render: RenderNavLink },
@@ -49,7 +41,7 @@ const getData: GetDataInterface = (networkPath: string) => {
 
 const legalData = (networkPath: string) => {
   return {
-    copyright: "Copyright \u00A9 2021 TradeTrust",
+    copyright: "Copyright \u00A9 Knowledge Catalyst | Powered by Tradetrust",
     items: [
       { label: "Privacy Policy", to: `${networkPath}/privacy-policy`, render: BottomRenderExternalLink },
       { label: "Terms of use", to: `${networkPath}/terms-of-use`, render: BottomRenderExternalLink },
@@ -59,14 +51,14 @@ const legalData = (networkPath: string) => {
 
 export const FooterBar: FunctionComponent = () => {
   const { configFile } = usePersistedConfigFile();
-  const networkPath = getNetworkPath(configFile?.network) || "https://tradetrust.io";
+  const networkPath = getNetworkPath(configFile?.network) || "https://knowledgecatalyst.io";
   const data = getData(networkPath);
 
   return (
     <div className="bg-cerulean-50 pt-8">
       <Footer
         className="bg-white py-8 px-6"
-        logoUrl={"/tradetrust_logo.svg"}
+        logoUrl={"/knowledgecatalyst-logo-black.webp"}
         legalData={legalData(networkPath)}
         data={data}
       />

@@ -76,7 +76,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = ({ logout })
   const NavLogo = () => {
     return (
       <a href={`${URLS.INFO}`} data-testid="nav-logo-home">
-        <img src="/tradetrust_logo.svg" />
+        <img src="/knowledgecatalyst-logo-black.webp" />
       </a>
     );
   };
