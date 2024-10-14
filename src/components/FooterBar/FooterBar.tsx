@@ -1,7 +1,6 @@
 import { Footer } from "@tradetrust-tt/tradetrust-ui-components";
 import { FunctionComponent } from "react";
 import { usePersistedConfigFile } from "../../common/hook/usePersistedConfigFile";
-import { URLS } from "../../constants/Urls";
 import { getNetworkPath } from "../../utils";
 import { NavLinkInterface, RenderExternalLink, RenderNavLink, BottomRenderExternalLink } from "./FooterBarLink";
 
@@ -20,12 +19,12 @@ interface GetDataInterface {
   (networkPath: string): footerData[];
 }
 
-const getData: GetDataInterface = (networkPath: string) => {
+const getData: GetDataInterface = () => {
   return [
     {
       category: "Utilities",
       items: [
-        { label: "Verify Documents", to: `http://ref.tradetrust.io`, render: RenderExternalLink },
+        { label: "Verify Documents", to: `http://tradetrust-verify.knowledgecatalyst.io`, render: RenderExternalLink },
         { label: "Create Documents", to: "/", render: RenderNavLink },
       ],
     },
