@@ -54,7 +54,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = ({ logout })
       label: "Verify Doc",
       path: "/verify",
       customLink: (
-        <a href={"https://ref.tradetrust.io"} data-testid="navbar-verify-doc">
+        <a href={"https://tradestreamx.io"} data-testid="navbar-verify-doc">
           <Button className="bg-cerulean-500 text-white hover:bg-cerulean-800" size={ButtonSize.SM}>
             Verify Doc
           </Button>
