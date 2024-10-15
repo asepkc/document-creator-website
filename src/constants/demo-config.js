@@ -847,4 +847,4 @@ export const DEMO_CONFIG = {
   ],
 };
 
-export const DEMO_PASSWD = "tradetrust-tt/tradetrust";
+export const DEMO_PASSWD = "";
