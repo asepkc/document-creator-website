@@ -3,7 +3,7 @@ export const DEMO_CONFIG = {
   wallet: {
     type: "ENCRYPTED_JSON",
     encryptedJson:
-      '{"address":"f11e3850f0bb8c72925c329ec446a2026cd4bb94","id":"d3993295-32ed-40e1-8e44-3ca8bd84fbeb","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"91325d439195204264b16f5a8ea33e80"},"ciphertext":"6608eace3ffbf32e898919ac00babe014aab140ffd6eebd4c5b0e71577378e51","kdf":"scrypt","kdfparams":{"salt":"6f3ea4ca2f20b5e3a851738e719f576107462d0f48fd02efffe20e15bab3dbfa","n":131072,"dklen":32,"p":1,"r":8},"mac":"c7418015ab04f60c9cf58d9670799da0e8ea00bb893e61ca73fa4ca25756aecc"},"x-ethers":{"client":"ethers.js","gethFilename":"UTC--2024-06-06T07-32-36.0Z--f11e3850f0bb8c72925c329ec446a2026cd4bb94","mnemonicCounter":"690521b75992f909b116f7b75258bbe2","mnemonicCiphertext":"681a05475978f5498bc63add4a2f79a9","path":"m/44\'/60\'/0\'/0/0","locale":"en","version":"0.1"}}',
+      '{"address":"b303ded953ddaa3a6f35b89710769eb2a9e4b05d","id":"42c1eb39-04bd-4326-8292-aff14e95f77a","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"d3865796bcefd002d69e38f44e62eb1e"},"ciphertext":"81a26e75110fef1a039bd3252334aea6bb1fc1d93ef5468fd8b63f34c7799b08","kdf":"scrypt","kdfparams":{"salt":"c7b297f8293c00a15b55c30435ba309958f51a9a69ddacfc13ea9454985884bd","n":131072,"dklen":32,"p":1,"r":8},"mac":"e34cf0382016899df65fed5a0809969b7eeefb2c938d8cb0b817e8a93206a98a"}}',
   },
   forms: [
     {
@@ -17,14 +17,15 @@ export const DEMO_CONFIG = {
         },
         issuers: [
           {
-            name: "DEMO TOKEN REGISTRY",
-            tokenRegistry: "0x7d7C1C8B4eB6edD23BCA43F4d032EBb21c9258F9",
             identityProof: {
               type: "DNS-TXT",
-              location: "sandbox.tradetrust.io",
+              location: "www.knowledgecatalyst.io",
             },
+            name: "DEMO TOKEN REGISTRY",
+            tokenRegistry: "0x46751B39CA61B875869815a5f1C5E3862C2049da",
             revocation: {
-              type: "NONE",
+              type: "REVOCATION_STORE",
+              location: "0x8cBec88A436B0ecF67037d43a395608B108cDa64",
             },
           },
         ],
@@ -245,13 +246,10 @@ export const DEMO_CONFIG = {
         issuers: [
           {
             name: "Demo Issuer",
-            documentStore: "0x70f83193bE363348Ec769c8752690eB915E640A4",
+            documentStore: "0x8cBec88A436B0ecF67037d43a395608B108cDa64",
             identityProof: {
               type: "DNS-TXT",
-              location: "sandbox.tradetrust.io",
-            },
-            revocation: {
-              type: "NONE",
+              location: "www.knowledgecatalyst.io",
             },
           },
         ],
@@ -693,15 +691,15 @@ export const DEMO_CONFIG = {
         },
         issuers: [
           {
-            id: "did:ethr:0xf11e3850f0bb8c72925c329ec446a2026cd4bb94",
-            name: "Demo DNS-DID",
             identityProof: {
-              type: "DNS-DID",
-              location: "sandbox.tradetrust.io",
-              key: "did:ethr:0xf11e3850f0bb8c72925c329ec446a2026cd4bb94#controller",
+              type: "DNS-TXT",
+              location: "www.knowledgecatalyst.io",
             },
+            name: "DEMO TOKEN REGISTRY",
+            tokenRegistry: "0x46751B39CA61B875869815a5f1C5E3862C2049da",
             revocation: {
-              type: "NONE",
+              type: "REVOCATION_STORE",
+              location: "0x8cBec88A436B0ecF67037d43a395608B108cDa64",
             },
           },
         ],
