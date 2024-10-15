@@ -691,12 +691,13 @@ export const DEMO_CONFIG = {
         },
         issuers: [
           {
+            id: "did:ethr:0x46751B39CA61B875869815a5f1C5E3862C2049da",
             identityProof: {
-              type: "DNS-TXT",
+              type: "DNS-DID",
               location: "www.knowledgecatalyst.io",
+              key: "did:ethr:0x46751B39CA61B875869815a5f1C5E3862C2049da#controller",
             },
-            name: "DEMO TOKEN REGISTRY",
-            tokenRegistry: "0x46751B39CA61B875869815a5f1C5E3862C2049da",
+            name: "DEMO DNS-DID",
             revocation: {
               type: "REVOCATION_STORE",
               location: "0x8cBec88A436B0ecF67037d43a395608B108cDa64",
