@@ -698,10 +698,6 @@ export const DEMO_CONFIG = {
               key: "did:ethr:0xb303ded953ddaa3a6f35b89710769eb2a9e4b05d#controller",
             },
             name: "DEMO DNS-DID",
-            revocation: {
-              type: "REVOCATION_STORE",
-              location: "0x8cBec88A436B0ecF67037d43a395608B108cDa64",
-            },
           },
         ],
         network: {
