@@ -1,5 +1,5 @@
 export const DEMO_CONFIG = {
-  network: "stability",
+  network: "sepolia",
   wallet: {
     type: "ENCRYPTED_JSON",
     encryptedJson:
